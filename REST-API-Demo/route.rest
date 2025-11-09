@@ -1,0 +1,23 @@
+GET http://localhost:4000/subscribers
+###
+GET http://localhost:4000/subscribers/
+###
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Amazing",
+  "subscribedToChannel": "WebDev"
+}
+
+###
+DELETE http://localhost:4000/subscribers/68dc76032b02290df231a4d5
+
+### 
+PATCH http://localhost:4000/subscribers/68dd7cf7a114eccd966c0974
+Content-Type: application/json
+
+{
+  "name": "New Name"
+  
+}
